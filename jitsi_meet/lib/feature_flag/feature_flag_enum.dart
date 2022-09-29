@@ -89,4 +89,9 @@ enum FeatureFlagEnum {
   /// Flag indicating if the welcome page should be enabled.
   /// Default: disabled (false).
   WELCOME_PAGE_ENABLED,
+  
+
+  /// Flag indicating if the screensharing should be enabled.
+  /// Default: disabled (false).
+  ANDROID_SCREENSHARING_ENABLED,
 }
