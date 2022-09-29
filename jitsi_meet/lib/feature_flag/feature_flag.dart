@@ -25,6 +25,7 @@ class FeatureFlag {
   bool? toolboxAlwaysVisible;
   bool? videoShareButtonEnabled;
   bool? welcomePageEnabled;
+  bool? androidScreensharingEnabled;
 
   int? get resoulution {
     return _resolution;
@@ -140,6 +141,11 @@ class FeatureFlag {
       featureFlags[FeatureFlagHelper
               .featureFlags[FeatureFlagEnum.WELCOME_PAGE_ENABLED]] =
           welcomePageEnabled;
+    
+    if (androidScreensharingEnabled != null)
+      featureFlags[FeatureFlagHelper
+              .featureFlags[FeatureFlagEnum.ANDROID_SCREENSHARING_ENABLED]] =
+          androidScreensharingEnabled;
 
     return featureFlags;
   }
